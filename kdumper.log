@@ -1,0 +1,35 @@
+-
+failed to get kernel_baseel base...
+-
+Kernel base is 0x91c00000.
+kernel pmap is at 0x91f2e01c.
+kernel pmap details: tte_virt: 0x92a38000 tte_phys: 0x40e38000
+New TTEs generated, base address for remap: 0x40000000, physBase: 0x5fe00000
+======================================================================================
+!!!! Kernel TTE entries written. System stability is no longer guaranteed.
+!!!! Security has also been reduced by an exponential factor. You have been warned.
+======================================================================================
+-
+NOT running
+-
+Kernel base is 0x96800000.
+kernel pmap is at 0x96b2e01c.
+kernel pmap details: tte_virt: 0x97638000 tte_phys: 0x40e38000
+New TTEs generated, base address for remap: 0x40000000, physBase: 0x5fe00000
+======================================================================================
+!!!! Kernel TTE entries written. System stability is no longer guaranteed.
+!!!! Security has also been reduced by an exponential factor. You have been warned.
+======================================================================================
+-
+Kernel base is 0x96800000.
+kernel pmap is at 0x96b2e01c.
+kernel pmap details: tte_virt: 0x97638000 tte_phys: 0x40e38000
+New TTEs generated, base address for remap: 0x40000000, physBase: 0x5fe00000
+======================================================================================
+!!!! Kernel TTE entries written. System stability is no longer guaranteed.
+!!!! Security has also been reduced by an exponential factor. You have been warned.
+======================================================================================
+feedface
+Syncing disks.
+Magic happening now. (attempted!)
+written = 1044480
