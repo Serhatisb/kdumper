@@ -8,3 +8,6 @@ kloader and ios-kexec-utils by [@winocm](https://github.com/winocm)
 kdumper by [@xerub](https://github.com/xerub/ios-kexec-utils/)
 
 # How to compile
+`xcrun -sdk iphoneos clang kdumper.c -arch armv7 -framework IOKit -framework CoreFoundation -no-integrated-as -DINLINE_IT_ALL=1 -o kloader -miphoneos-version-min=6.0`
+
+`ldid -Stfp0.plist kdumper`
