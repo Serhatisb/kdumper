@@ -20,7 +20,7 @@ It may not dump the iBoot first time with Segmentation fault: 11 so try executin
 The dump of iPhone3,1/11D257 is on the source code.
 
 # How to compile
-`xcrun -sdk iphoneos clang kdumper.c -arch armv7 -framework IOKit -framework CoreFoundation -no-integrated-as -DINLINE_IT_ALL=1 -o kloader -miphoneos-version-min=6.0`
+`xcrun -sdk iphoneos clang kdumper.c -arch armv7 -framework IOKit -framework CoreFoundation -no-integrated-as -DINLINE_IT_ALL=1 -o kdumper -miphoneos-version-min=6.0`
 
 `ldid -Stfp0.plist kdumper`
 
