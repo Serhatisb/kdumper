@@ -1,5 +1,5 @@
 # kdumper
-Dumps iBoot and is based on kdumper. This might be useful for De Rebus Antiquis with making the nettoyeur. Got it to execute on iPhone3,1/11D257 (iPhone 4 7.1.2) Compiled with help from [@xerub](twitter.com/xerub) iOS 6.0-7.1.2 only.
+Dumps iBoot and is based on kdumper. This might be useful for De Rebus Antiquis with making the nettoyeur. Got it to execute on iPhone3,2/11D257 (iPhone 4 (2012) 7.1.2) Compiled with help from [@xerub](twitter.com/xerub) and [@dora2_yururi](twitter.com/dora2_yururi) iOS 6.0-7.1.2 only.
 
 kloader and ios-kexec-utils by [@winocm](https://github.com/winocm)
 
