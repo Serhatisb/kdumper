@@ -9,15 +9,11 @@ kdumper by [@xerub](https://github.com/xerub/ios-kexec-utils/)
 
 A jailbroken device with tfp0 is required to execute this. 
 
-You need to have an empty /dump file for the dumped iBoot and an empty /start file both on root and time set to Jan 1 1970 00:00-00:15 in Settings to get through the failsafe checks. The failsafe checks are there to prevent bootlooping.
+You need to have an empty /dump file for the dumped iBoot and an empty /start file both on root and time set to Jan 1 1970 00:00-00:15 in Settings to get through the failsafe checks. You also need to put kdumper in /etc/rc.d from the root of your device with chmod 755. kdumper was put on this folder because the untether is executed in the same folder and the failsafe checks are there to prevent bootlooping.
 
-You need to execute kdumper as soon as you can SSH when the device boots up.
+The dump of iPhone3,2/11D257 is on the source code.
 
-Then you need to type `kdumper /dump` (if kdumper is in /usr/bin with 777)
-
-It may not dump the iBoot first time with Segmentation fault: 11 so try executing again.
-
-The dump of iPhone3,1/11D257 is on the source code.
+kdumper will dump the iBoot from 6.x and 7.x but because iloader isn't compatible with iOS 6.x, De Rebus Antiquis cannot be exploited in that version.
 
 # How to compile
 `xcrun -sdk iphoneos clang kdumper.c -arch armv7 -framework IOKit -framework CoreFoundation -no-integrated-as -DINLINE_IT_ALL=1 -o kdumper -miphoneos-version-min=6.0`
